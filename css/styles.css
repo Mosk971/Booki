@@ -8,6 +8,7 @@ html{
 body{
   font-family: "Raleway";
   margin: 2% 2%;
+  
 }
 
 .bodysize{
@@ -169,6 +170,11 @@ a{
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
 }
+.btneco:hover, .btnfam:hover, .btnrom:hover, .btndog:hover{
+  background-color: #DEEBFF;
+
+  color: white;
+}
 
 .infos{
   margin-top: 20px;
@@ -231,6 +237,7 @@ a{
 }
 .cardone{
   display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 .aside{
