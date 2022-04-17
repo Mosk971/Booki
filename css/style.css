@@ -1,0 +1,420 @@
+:root{
+  /* box-sizing: border-box; */
+  font-family: raleway, verdana;
+  /* margin: 0;
+  padding: 0; */
+  --bleu: #0065FC;
+  --bleu-clair: #DEEBFF;
+  --gris: #F2F2F2;
+  --white: #FFFFFF;
+  --gris-2: #d9d9d9;
+}
+
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.body_container{
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+/*  log et nav barre */
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 131px;
+}
+.navigation img{
+  width: 61px;
+  height: 30px;
+  margin-left: 70px;
+}
+.card_list_l1 a, .card_list_l2 a{
+  display: flex;
+}
+a{
+  text-decoration: none;
+
+}
+nav a{
+  padding-top: 55px;
+  font-size: 15px;
+  color: var(--bleu);
+  text-decoration: none;
+}
+nav a:hover{
+  border-top: 2px solid;
+}
+ nav a:nth-child(1){
+   margin-right: 70px;
+}
+ nav a:nth-child(2){
+   margin-right: 70px;
+}
+
+.filtre_eco:visited{
+  color: inherit;
+}
+.filtre_eco:hover{
+  background-color: var(--bleu-clair);
+}
+
+/*  H1/P HEADER */
+.entete{
+  margin-left: 55px;
+  letter-spacing: normal;
+  margin-bottom: 25px;
+}
+.entete h1{
+  letter-spacing: -0.9px;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+/*  BOUTON de RECHERCHE */
+
+.header_search{
+  margin-left: 55px;
+}
+
+form{
+  display: flex;
+  position: static;
+  border: solid 1px var(--gris);
+  border-radius: 15px;
+  width: 420px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+input:focus{
+  outline: none;
+}
+.search_bar button{
+  width: 135px;
+  height: 50px;
+  border: none;
+  background-color: var(--bleu);
+  border-radius: 0 15px 15px 0;
+  color: var(--white);
+}
+.search_bar input{
+  width: 235px;
+  height: 50px;
+  border: 2px  solid var(--gris);
+  border: none;
+
+}
+.dot_icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gris);
+}
+
+/* FILTRE */
+
+.filtres{
+  margin-left: 63px;
+  display: flex;
+  margin-bottom: 40px;
+}
+.filtres a{
+  padding-right: 20px;
+}
+.filtre_eco{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border: solid 2px var(--gris);
+  border-radius: 20px;
+  align-items: center;
+  position: static;
+  margin-left: 34px;
+}
+
+
+
+.filtres h2{
+  font-size: 16px;
+  align-self: center;
+  font-weight: bold;
+}
+
+/* ICONES ETOILES INFOS */
+
+.icon span{
+  position: relative;
+  left: -5px;
+}
+
+.fa-circle{
+  color: var(--bleu-clair);
+}
+.circlegrey{
+  color: var(--gris);
+}
+.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog, .fa-info{
+  color: var(--bleu);
+}
+ .point_infos{
+   margin-left: 60px;
+   font-size: 15px;
+   margin-bottom: 40px;
+ }
+/* -------------------- */
+
+ .main_container{
+   margin-left: 50px;
+   margin-right: 50px;
+   display: flex;
+   gap: 35px;
+ }
+ .cards_title_left h2{
+   font-size: 23px;
+ }
+
+.vignette{
+  display: flex;
+}
+
+ .card_container_left{
+   width: 880px;
+   background-color: var(--gris);
+   border-radius: 15px 15px 15px 15px;
+ }
+
+.padding_container_left{
+  padding: 45px 40px 50px 40px
+}
+
+
+.card_list_l1{
+ display: flex;
+ justify-content: space-between;
+
+}
+.card_l1{
+  font-size: 14px;
+  width: 247px;
+  max-height: 199px;
+  box-shadow: 5px 5px 10px var(--gris-2);
+  background-color: var(--white);
+  border-radius: 20px;
+  padding:5px;
+  margin-top: 22px;
+}
+
+/* .one.two.three */
+
+.card_l1 img{
+  object-fit: cover;
+  max-height: 60%;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.card_l1 figcaption{
+  border-radius: 0 0 16px 16px;
+  /* background-color: violet; */
+  padding: 5px 10px 0 ;
+}
+.card_l1 p{
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.fig_text_L p{
+  margin: 8px 0;
+}
+
+.fa-star{
+  color: var(--bleu);
+}
+.fa-star.grey_star{
+  color: var(--gris-2);
+}
+
+.extra_bottom_left p{
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 40px;
+}
+.extra_bottom_left p{
+  font-size: 16px;
+}
+/* RIGHT: SIDE  */
+
+.card_container_right{
+  width: 420px;
+  background-color: var(--gris);
+  border-radius: 20px 20px 20px 20px;
+}
+
+
+.padding_container_right{
+
+  justify-content: space-between;
+  padding:46px 40px 34px 37px;
+}
+.cards_title_right{
+  display: flex;
+  justify-content: space-between;
+}
+.cards_title_right h2{
+  padding-bottom: 23px;
+}
+.cards_title_right i{
+  font-size: 23px;
+}
+
+.card_list_l2{
+  display: flex;
+  justify-content: space-between;
+}
+
+ .card_r1{
+   display: flex;
+   font-size: 14px;
+   width: 343px;
+   max-height: 145px;
+   box-shadow: 5px 5px 10px var(--gris-2);
+   background-color: var(--white);
+   border-radius: 20px;
+   padding:5px;
+   margin-bottom: 30px;
+}
+
+.card_r1 img{
+
+  object-fit: cover;
+  max-width: 127px;
+  max-height: 135px;
+  border-radius: 16px 0px 0px 16px;
+  width:100%;
+}
+.card_r1 figcaption{
+  margin: 20px 60px 5px 20px;
+}
+.card_r1 strong{
+  font-size: 15px;
+}
+.flex{
+  display: flex;
+
+}
+.card_r1 p{
+  font-size: 13px;
+  margin: 15px 0 30px 0 ;
+}
+/* ACTIVITES A MARSEILLE */
+
+.bottom_container{
+  margin: 65px 50px 0 50px;
+}
+.cards_list_bottom{
+  display: flex;
+  gap: 43px;
+  margin-top: 27px;
+}
+.vieux_port{
+  width: 300px;
+  height: 445px;
+  box-shadow: 5px 5px 45px var(--gris-2);
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.vieux_port img{
+  object-fit: cover;
+  width:100%;
+  height: 390px;
+  border-radius: 20px 20px 0 0;
+}
+.t1, .t2, .t3, .t4 {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.fort_de_pomegues{
+  width: 300px;
+  height: 237px;
+  box-shadow: 5px 5px 45px var(--gris-2);
+  background-color: var(--white);
+  border-radius: 20px;
+  margin-bottom: 43px;
+}
+ .fort_de_pomegues img{
+   object-fit: cover;
+   max-height: 181px;
+   width: 100%;
+   border-radius: 20px 20px 0 0;
+ }
+
+.iles_du_frioul{
+  width: 300px;
+  height: 166px;
+  box-shadow: 5px 5px 45px var(--gris-2);
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.iles_du_frioul img{
+  object-fit: cover;
+  max-height: 110px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.notre_dame{
+  width: 300px;
+  height: 196px;
+  box-shadow: 5px 5px 45px var(--gris-2);
+  background-color: var(--white);
+  border-radius: 20px;
+}
+.longchamp{
+  width: 300px;
+  height: 206px;
+  box-shadow: 5px 5px 45px var(--gris-2);
+  background-color: var(--white);
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.notre_dame img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 140px;
+  border-radius: 20px 20px 0 0;
+}
+.longchamp img{
+  object-fit: cover;
+  width: 100%;
+  max-height: 152px;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Footer */
+
+
+.Footer_container{
+  height: 218px;
+  max-width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 210px;
+  background-color: var(--gris);
+  margin-top: 60px;
+}
+.propos , .nos_hebergements , .Assistance {
+  margin-top: 50px ;
+  margin-left: 50px;
+}
+.propos p, .nos_hebergements p, .Assistance p{
+  margin-top: 20px;
+}
