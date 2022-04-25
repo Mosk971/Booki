@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+  .body_container{
+    width: 992px;
+    margin: auto;
+
+  }
+  .navigation{ gap: 540px;}
+  .main_container{
+    display: block;
+  }
+   .card_container_right{
+    margin-bottom: 50px;
+    width: 880px;
+    margin: 50px auto;
+  }
+  .card_container_left,{
+
+  }
+  .padding_container_left{
+
+  }
+  #hebergements{
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .card_list_l1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .extra_bottom_left p{
+    margin-top: 10px;
+  }
+
+  .padding_container_right{
+    padding: 30px;
+  }
+
+  .cards_list_right{
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    margin-top: 10px;
+  }
+
+  .cards_title_right span{
+    display: none;
+
+  }
+
+  .cards_title_right {
+    justify-content: center;
+    margin-top: -10px;
+  }
+
+  .cards_list_bottom{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width:892px;
+  }
+
+  .Bottom_title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Footer_container{
+    width: auto;
+    gap: 0px;
+    justify-content: space-around;
+  }
+
+  .propos, .nos_hebergements, .assistance {
+    margin: 30px 20px 10px 30px;
+  }
+
+  .propos p, .nos_hebergements p, .assistance p{
+    margin-top: 10px;
+  }
+}

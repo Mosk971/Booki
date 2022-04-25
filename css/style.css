@@ -15,48 +15,41 @@
   margin: 0;
   padding: 0;
 }
+.body_container{max-width: 1440px; margin: 0 auto;}  /*wrapper general*/
 
-
-.body_container{
-  max-width: 1440px;
-  margin: 0 auto;
-
-}
-/*  log et nav barre */
 .navigation{
   display: flex;
-  justify-content: space-between;
+  gap: 965px;
   align-items: center;
-  width: 1440px;
+  width: 100%;
   height: 131px;
 }
-.navigation img{
-  width: 61px;
-  height: 30px;
+.logo img{
+  width: 90px;
   margin-left: 70px;
 }
 .card_list_l1 a, .card_list_l2 a{
   display: flex;
 }
-a{
-  text-decoration: none;
 
+a {text-decoration: none;}
+
+nav{
+  display: flex;
+  gap: 81px;
+  
 }
 nav a{
   padding-top: 55px;
   font-size: 15px;
   color: var(--bleu);
   text-decoration: none;
+
 }
 nav a:hover{
   border-top: 2px solid;
 }
- nav a:nth-child(1){
-   margin-right: 70px;
-}
- nav a:nth-child(2){
-   margin-right: 70px;
-}
+
 
 .filtre_eco:visited{
   color: inherit;
@@ -80,68 +73,86 @@ nav a:hover{
 /*  BOUTON de RECHERCHE */
 
 .header_search{
-  margin-left: 55px;
-}
-
-form{
-  display: flex;
-  position: static;
-  border: solid 1px var(--gris);
-  border-radius: 15px;
-  width: 420px;
-  overflow: hidden;
-  margin-bottom: 25px;
-}
-
-input:focus{
-  outline: none;
-}
-.search_bar button{
-  width: 135px;
-  height: 50px;
-  border: none;
-  background-color: var(--bleu);
-  border-radius: 0 15px 15px 0;
-  color: var(--white);
-}
-.search_bar input{
-  width: 235px;
-  height: 50px;
-  border: 2px  solid var(--gris);
-  border: none;
+  display:flex;
+  margin:0 0 50px 55px;
 
 }
 .dot_icon{
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--gris);
+  border-radius: 15px 0 0 15px;
+}
+.input_and_btn_wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+form{
+  display: flex;
+
+  width: 420px;
 }
 
-/* FILTRE */
+.search_bar input{
+  width: 235px;
+  height: 50px;
+  border: 2px  solid var(--gris);
+  border-left: none;
+  border-right: none;
+}
+#rechercher{
+  width: 135px;
+  height: 50px;
+  border: none;
+  border-left: none;
+  background-color: var(--bleu);
+  border-radius: 0 15px 15px 0;
+  color: var(--white);
+}
+@media all and (min-width: 769px) {
+  #loupe {
+    display: none;
+  }
+}
+
+::placeholder{
+  font-weight: bold;
+}
+input:focus{
+  outline: none;
+}
+
+                          /* FILTRE */
+
 
 .filtres{
-  margin-left: 63px;
   display: flex;
   margin-bottom: 40px;
+  margin-left: 63px;
+  gap: 15px;
 }
+.filtre_wrapper{
+  display: flex;
+  font-weight: bold;
+  gap: 40px;
+}
+
 .filtres a{
   padding-right: 20px;
 }
 .filtre_eco{
   display: flex;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+  height: 44px;
   border: solid 2px var(--gris);
   border-radius: 20px;
-  align-items: center;
-  position: static;
-  margin-left: 34px;
+  gap: 10px;
 }
-
-
 
 .filtres h2{
   font-size: 16px;
@@ -151,14 +162,18 @@ input:focus{
 
 /* ICONES ETOILES INFOS */
 
-.icon span{
-  position: relative;
-  left: -5px;
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #deebff;
+
 }
 
-.fa-circle{
-  color: var(--bleu-clair);
-}
+
 .circlegrey{
   color: var(--gris);
 }
@@ -166,9 +181,14 @@ input:focus{
   color: var(--bleu);
 }
  .point_infos{
+   display: flex;
    margin-left: 60px;
    font-size: 15px;
    margin-bottom: 40px;
+ }
+ #infos{
+   margin-left: 10px;
+   align-self: center;
  }
 /* -------------------- */
 
@@ -178,13 +198,6 @@ input:focus{
    display: flex;
    gap: 35px;
  }
- .cards_title_left h2{
-   font-size: 23px;
- }
-
-.vignette{
-  display: flex;
-}
 
  .card_container_left{
    width: 880px;
@@ -193,15 +206,23 @@ input:focus{
  }
 
 .padding_container_left{
-  padding: 45px 40px 50px 40px
+  padding: 45px 40px 50px 40px;
+  width: 100%;
 }
 
+.cards_title_left h2{
+  font-size: 23px;
+}
 
 .card_list_l1{
  display: flex;
  justify-content: space-between;
+ flex-wrap: wrap;
+ width: 800px;
 
 }
+
+
 .card_l1{
   font-size: 14px;
   width: 247px;
@@ -212,9 +233,16 @@ input:focus{
   padding:5px;
   margin-top: 22px;
 }
+.card_l1 a{
+  display: block;
+  height: 199px;
+  width: auto;
+}
 
 /* .one.two.three */
-
+span{
+  font-weight: bold;
+}
 .card_l1 img{
   object-fit: cover;
   max-height: 60%;
@@ -227,8 +255,8 @@ input:focus{
   padding: 5px 10px 0 ;
 }
 .card_l1 p{
-  margin-top: 10px;
-  margin-bottom:10px;
+  margin-top: 5px;
+  margin-bottom:5px;
 }
 
 .fig_text_L p{
@@ -273,12 +301,9 @@ input:focus{
 }
 .cards_title_right i{
   font-size: 23px;
+
 }
 
-.card_list_l2{
-  display: flex;
-  justify-content: space-between;
-}
 
  .card_r1{
    display: flex;
@@ -290,10 +315,14 @@ input:focus{
    border-radius: 20px;
    padding:5px;
    margin-bottom: 30px;
+
 }
-
+.card_r1 a{
+  display: flex;
+  height: 145px;
+  width: 100%;
+}
 .card_r1 img{
-
   object-fit: cover;
   max-width: 127px;
   max-height: 135px;
@@ -301,18 +330,18 @@ input:focus{
   width:100%;
 }
 .card_r1 figcaption{
-  margin: 20px 60px 5px 20px;
-}
-.card_r1 strong{
-  font-size: 15px;
-}
-.flex{
+  padding-left: 10px;
   display: flex;
-
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
+
 .card_r1 p{
   font-size: 13px;
-  margin: 15px 0 30px 0 ;
+
 }
 /* ACTIVITES A MARSEILLE */
 
@@ -333,7 +362,7 @@ input:focus{
 }
 .vieux_port img{
   object-fit: cover;
-  width:100%;
+  width:300px;
   height: 390px;
   border-radius: 20px 20px 0 0;
 }
@@ -403,18 +432,18 @@ input:focus{
 
 
 .Footer_container{
-  height: 218px;
-  max-width: 100%;
+  height: 100%;
+  width: 1440px;
   display: flex;
   justify-content: start;
   gap: 210px;
   background-color: var(--gris);
   margin-top: 60px;
 }
-.propos , .nos_hebergements , .Assistance {
+.propos , .nos_hebergements , .assistance {
   margin-top: 50px ;
   margin-left: 50px;
 }
-.propos p, .nos_hebergements p, .Assistance p{
+.propos p, .nos_hebergements p, .assistance p{
   margin-top: 20px;
 }
