@@ -30,6 +30,7 @@
     justify-content: space-between;
     margin-top: 10px;
   }
+
   .extra_bottom_left p{
     margin-top: 10px;
   }
@@ -41,10 +42,15 @@
   .cards_list_right{
     display: flex;
     justify-content: space-between;
-    overflow: auto;
+    
     margin-top: 10px;
   }
-
+  .card_r1{
+  border-radius: 73px 33px 70px 62px;
+  }
+  .card_r1 img{
+    border-radius: 104px 3px 90px 97px;
+  }
   .cards_title_right span{
     display: none;
 

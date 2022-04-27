@@ -37,7 +37,7 @@ a {text-decoration: none;}
 nav{
   display: flex;
   gap: 81px;
-  
+
 }
 nav a{
   padding-top: 55px;
@@ -249,7 +249,7 @@ span{
   width: 100%;
   border-radius: 16px 16px 0 0;
 }
-.card_l1 figcaption{
+.figcaption_left{
   border-radius: 0 0 16px 16px;
   /* background-color: violet; */
   padding: 5px 10px 0 ;
@@ -329,7 +329,7 @@ span{
   border-radius: 16px 0px 0px 16px;
   width:100%;
 }
-.card_r1 figcaption{
+.figcaption_right{
   padding-left: 10px;
   display: flex;
   flex-direction: column;
