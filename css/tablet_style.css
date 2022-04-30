@@ -14,7 +14,7 @@
     width: 880px;
     margin: 50px auto;
   }
-  .card_container_left,{
+  .card_container_left{
 
   }
   .padding_container_left{
@@ -42,7 +42,7 @@
   .cards_list_right{
     display: flex;
     justify-content: space-between;
-    
+
     margin-top: 10px;
   }
   .card_r1{

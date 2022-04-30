@@ -28,7 +28,7 @@
       text-align: center;
       margin-left: -60px;
       width: 384px;
-      padding-bottom: 20px
+      padding-bottom: 20px;
       border-bottom: 4px solid var(--gris);
     }
     .activ{
@@ -236,7 +236,7 @@
   }
   .figcaption_left{
     font-size: 30px;
-    height:
+    
   }
   .card_l1 p {
     font-size: 20px;
