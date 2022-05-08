@@ -3,38 +3,35 @@
     .body_container{
       width: auto;
     }
-    header{
+    /* header{
       padding: 40px;
-    }
+    } */
     .navigation {
       display: block;
+      margin-bottom: 40px;
     }
+
     .logo{
-      display: flex;
-      justify-content: center;
-      width: 688px;
+      text-align: center;
     }
+
     .logo img{
       width: 150px;
     }
     nav{
       justify-content: space-between;
       gap: 0;
-      margin-bottom: 40px;
-      padding: 20px;
-      width: 688px
-    }
-    .heberg{
+      margin-top: 50px;
       text-align: center;
-      margin-left: -60px;
-      width: 384px;
+    }
+
+    .heberg{
+      width: 50%;
       padding-bottom: 20px;
       border-bottom: 4px solid var(--gris);
     }
     .activ{
-      text-align: center;
-      margin-right: -60px;
-      width: 384px;
+      width: 50%;
       padding-bottom: 20px;
       border-bottom: 4px solid var(--gris);
     }
@@ -43,50 +40,52 @@
       border-bottom: 4px solid var(--bleu);
     }
     nav a{
-      display:block;
       font-size: 25px;
-      width: 50%;
-      margin-left: 120px;
-
+      padding-top: 0;
     }
+
     nav a:hover{
       border-top: none;
     }
+
     .entete{
-      margin: 0;
-      margin-top: 100px;
-      font-size: 30px;
+      margin-left: 0;
+      padding: 0 40px;
+      margin-bottom: 80px;
+
     }
     .entete h1{
-      width: 688px;
-      font-size: 50px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-
+      font-size: 44px;
+      margin-bottom: 22px;
     }
+
     .entete p{
-      text-align: left;
       margin-bottom: 50px;
-      width: 688px;
+      font-size: 30px;
     }
-    .header_search{
-      margin: 0;
-      margin-bottom: 50px;
-      width: auto;
 
+    .header_search{
+      margin-left: 0;
+      padding: 0 40px 0 40px;
     }
+
     .dot_icon{
       min-width: 120px;
       height: 120px;
       font-size: 2em;
       border-radius: 35px 0 0 35px;
     }
+
     form{
-      width:auto;
+      width:100%;
     }
+    .input_and_btn_wrapper{
+      width: 80%;
+    }
+
     .search_bar input{
-      height: 120px;
-      width: 460px;
+      height: 100%;
+      max-width: none;
       font-size: 36px;
     }
     #rechercher{
@@ -94,13 +93,14 @@
     }
     #loupe{
       background-color: var(--bleu);
-      width: 120px;
-      height: 120px;
+      width: 20%;
+      height: 100%;
+      min-width: 120px;
       border-radius:  35px 35px 35px 35px;
       font-size: 2em;
       border: none;
       color: var(--white);
-      margin-left: -20px;
+
     }
                                     /* FILTER */
 
@@ -108,7 +108,7 @@
     margin: 0;
     gap:0;
     flex-wrap: wrap;
-    width: 688px;
+    padding: 0 40px 0 40px;
   }
   .filtres a{
     padding: 30px;
@@ -137,10 +137,10 @@
     border-radius: 45px;
   }
   .point_infos{
-    margin: 0;
+    margin-left: 0;
     margin-top: 20px;
     display: flex;
-    width: 688px;
+    padding: 0 40px 0 40px;
     font-size: 20px;
   }
 
@@ -155,7 +155,7 @@
                                     /*CARDS  */
 
   .main_container{
-    width: 768px;
+
     margin: 0;
     display: flex;
     flex-direction: column-reverse;
@@ -201,6 +201,9 @@
   .card_r1 p{
     font-size: 20px;
   }
+  .card a{
+    height: 100%;
+  }
   .stars{
   font-size: 19px;
   }
@@ -236,7 +239,7 @@
   }
   .figcaption_left{
     font-size: 30px;
-    
+
   }
   .card_l1 p {
     font-size: 20px;
@@ -262,7 +265,7 @@
   }
 
   .cards_list_bottom{
-    width: 688px;
+
     gap: 0;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -293,7 +296,7 @@
 
 
   .Footer_container{
-    width: 768px;
+    width: auto;
     margin:0;
     flex-direction: column;
     align-items: start;
