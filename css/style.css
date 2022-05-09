@@ -22,7 +22,8 @@
   gap: 965px;
   align-items: center;
   width: 100%;
-  height: 131px;
+  margin-bottom: 131px;
+  margin-top: 42px;
 }
 .logo img{
   width: 90px;
@@ -100,14 +101,16 @@ figure a{
   color: inherit;
 }
 .search_bar input{
-  width: 235px;
+  max-width: 235px;
+  width: 80%;
   height: 50px;
   border: 2px  solid var(--gris);
   border-left: none;
   border-right: none;
 }
 #rechercher{
-  width: 135px;
+  max-width: 135px;
+  width: 40%; 
   height: 50px;
   border: none;
   border-left: none;
