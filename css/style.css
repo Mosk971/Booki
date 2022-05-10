@@ -15,14 +15,14 @@
   margin: 0;
   padding: 0;
 }
-.body_container{max-width: 1440px; margin: 0 auto;}  /*wrapper general*/
+.body_container{max-width: 1440px; margin: auto;}  /*wrapper general*/
 
 .navigation{
   display: flex;
-  gap: 965px;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-bottom: 131px;
+  padding: 0 50px 0 50px;
+  margin-bottom: 40px;
   margin-top: 42px;
 }
 .logo img{
@@ -45,13 +45,10 @@ nav a{
   font-size: 15px;
   color: var(--bleu);
   text-decoration: none;
-
 }
 nav a:hover{
   border-top: 2px solid;
 }
-
-
 .filtre_eco:visited{
   color: inherit;
 }
@@ -59,28 +56,35 @@ nav a:hover{
   background-color: var(--bleu-clair);
 }
 
+
+
+
 /*  H1/P HEADER */
 .entete{
-  margin-left: 55px;
-  letter-spacing: normal;
   margin-bottom: 25px;
+  padding-left: 50px;
 }
+
 .entete h1{
   letter-spacing: -0.9px;
   font-size: 23px;
-  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 /*  BOUTON de RECHERCHE */
 
-.header_search{
-  display:flex;
-  margin:0 0 50px 55px;
-
+form{
+  display: flex;
 }
+.search_bar{
+ padding-left: 50px;
+ margin-bottom: 30px;
+}
+
 .dot_icon{
-  min-width: 50px;
-  height: 50px;
+  max-width: 50px;
+  width: 100%;
+  max-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,28 +93,22 @@ nav a:hover{
 }
 .input_and_btn_wrapper{
     display: flex;
-    align-items: center;
-  }
-
-form{
-  display: flex;
-
-  width: 420px;
+    width: 100%;
 }
+
+
 figure a{
   color: inherit;
 }
 .search_bar input{
-  max-width: 235px;
-  width: 80%;
-  height: 50px;
+  width: 20%;
   border: 2px  solid var(--gris);
   border-left: none;
   border-right: none;
 }
 #rechercher{
   max-width: 135px;
-  width: 40%; 
+  width: 100%;
   height: 50px;
   border: none;
   border-left: none;
@@ -137,13 +135,13 @@ input:focus{
 .filtres{
   display: flex;
   margin-bottom: 40px;
-  margin-left: 63px;
+  padding-left: 50px;
   gap: 15px;
 }
 .filtre_wrapper{
   display: flex;
   font-weight: bold;
-  gap: 40px;
+
 }
 
 .filtres a{
@@ -156,6 +154,7 @@ input:focus{
   height: 44px;
   border: solid 2px var(--gris);
   border-radius: 20px;
+  margin-right: 40px;
   gap: 10px;
 }
 
@@ -163,6 +162,7 @@ input:focus{
   font-size: 16px;
   align-self: center;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 /* ICONES ETOILES INFOS */
@@ -187,7 +187,7 @@ input:focus{
 }
  .point_infos{
    display: flex;
-   margin-left: 60px;
+   padding-left: 50px;
    font-size: 15px;
    margin-bottom: 40px;
  }
@@ -198,14 +198,14 @@ input:focus{
 /* -------------------- */
 
  .main_container{
-   margin-left: 50px;
-   margin-right: 50px;
+   padding: 0 50px;
    display: flex;
-   gap: 35px;
+   justify-content: space-between;
+   margin-bottom: 40px;
  }
 
  .card_container_left{
-   width: 880px;
+   width: 66%;
    background-color: var(--gris);
    border-radius: 15px 15px 15px 15px;
  }
@@ -223,9 +223,8 @@ input:focus{
  display: flex;
  justify-content: space-between;
  flex-wrap: wrap;
- width: 800px;
-
 }
+
 
 
 .card_l1{
@@ -286,7 +285,7 @@ span{
 /* RIGHT: SIDE  */
 
 .card_container_right{
-  width: 420px;
+  width: 31%;
   background-color: var(--gris);
   border-radius: 20px 20px 20px 20px;
 }
@@ -313,7 +312,7 @@ span{
  .card_r1{
    display: flex;
    font-size: 14px;
-   width: 343px;
+   max-width: 343px;
    max-height: 145px;
    box-shadow: 5px 5px 10px var(--gris-2);
    background-color: var(--white);
@@ -329,7 +328,7 @@ span{
 }
 .card_r1 img{
   object-fit: cover;
-  max-width: 127px;
+
   max-height: 135px;
   border-radius: 16px 0px 0px 16px;
   width:100%;
@@ -351,12 +350,15 @@ span{
 /* ACTIVITES A MARSEILLE */
 
 .bottom_container{
-  margin: 65px 50px 0 50px;
+  padding: 0 50px;
+  margin
 }
+.Bottom_title {margin-bottom: 20px;}
+
 .cards_list_bottom{
   display: flex;
-  gap: 43px;
-  margin-top: 27px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .vieux_port{
   width: 300px;
@@ -435,14 +437,14 @@ span{
 
 /* Footer */
 
-
-.Footer_container{
-  height: 100%;
-  width: 1440px;
-  display: flex;
-  justify-content: start;
-  gap: 210px;
+.Footer{
   background-color: var(--gris);
+}
+.Footer_container{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--gris);
+  width: 70%;
   margin-top: 60px;
 }
 .propos , .nos_hebergements , .assistance {
