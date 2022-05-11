@@ -437,13 +437,13 @@ span{
 
 /* Footer */
 
-.Footer{
+Footer{
   background-color: var(--gris);
+  width: 100%;
 }
 .Footer_container{
   display: flex;
   justify-content: space-between;
-  background-color: var(--gris);
   width: 70%;
   margin-top: 60px;
 }
