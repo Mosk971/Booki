@@ -331,7 +331,7 @@ span{
 
   max-height: 135px;
   border-radius: 16px 0px 0px 16px;
-  width:100%;
+  width:50%;
 }
 .figcaption_right{
   padding-left: 10px;
@@ -339,7 +339,7 @@ span{
   flex-direction: column;
   justify-content: space-around;
   margin: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 
